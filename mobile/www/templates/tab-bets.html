@@ -5,7 +5,7 @@
                 ng-repeat="bet in bets" 
                 type="item-text-wrap" 
                 href="#/tab/bets/{{bet.id}}">
-        <h4>{{bet.competition}} {{bet.domicile}} {{bet.score}} {{bet.visiteur}}</h4>
+        <h4 class="padding-left">{{bet.competition}} {{bet.domicile}} {{bet.score}} {{bet.visiteur}}</h4>
         <i class="icon ion-chevron-right icon-accessory"></i>
         <ion-option-button class="button-assertive" ng-click="remove(bet)">
           Delete
