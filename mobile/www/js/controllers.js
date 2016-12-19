@@ -18,7 +18,7 @@ angular.module('starter.controllers', [])
 .controller('BetDetailCtrl', function($scope, $stateParams, BetService) {
 //Controler de la page de détail du pari sportif
 
-  $scope.bet = BetService.get($stateParams.chatId);
+  $scope.bet = BetService.get($stateParams.betId);
 })
 
 .controller('ToolsCtrl', function($scope) {

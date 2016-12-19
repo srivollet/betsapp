@@ -6,29 +6,59 @@ angular.module('starter.services', [])
   // Some fake testing data
   var bets = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
+    date: '01/01/2016',
+    pays: 'France',
+    competition: 'Ligue 1',
+    domicile:'Marseille',
+    visiteur:'Paris Saint Germain',
+    typeBet:'DrawBet',
+    score:'1:0',
+    mise:6.5,
+    bookmaker:'PMU'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
+    date: '01/01/2016',
+    pays: 'France',
+    competition: 'Ligue 1',
+    domicile:'Marseille',
+    visiteur:'Paris Saint Germain',
+    typeBet:'DrawBet',
+    score:'1:0',
+    mise:6.5,
+    bookmaker:'PMU'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
+    date: '01/01/2016',
+    pays: 'France',
+    competition: 'Ligue 1',
+    domicile:'Marseille',
+    visiteur:'Paris Saint Germain',
+    typeBet:'DrawBet',
+    score:'1:0',
+    mise:6.5,
+    bookmaker:'PMU'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    date: '01/01/2016',
+    pays: 'France',
+    competition: 'Ligue 1',
+    domicile:'Marseille',
+    visiteur:'Paris Saint Germain',
+    type:'DrawBet',
+    score:'1:0',
+    mise:6.5,
+    bookmaker:'PMU'
+  }, {
+    id: 0,
+    date: '01/01/2016',
+    pays: 'France',
+    competition: 'Ligue 1',
+    domicile:'Marseille',
+    visiteur:'Paris Saint Germain',
+    typeBet:'DrawBet',
+    score:'1:0',
+    mise:6.5,
+    bookmaker:'PMU'
   }];
 
   return {
@@ -36,7 +66,7 @@ angular.module('starter.services', [])
       return bets;
     },
     remove: function(bet) {
-      bets.splice(bets.indexOf(chat), 1);
+      bets.splice(bets.indexOf(bet), 1);
     },
     get: function(betId) {
       for (var i = 0; i < bets.length; i++) {

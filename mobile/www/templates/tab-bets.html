@@ -1,13 +1,13 @@
 <ion-view view-title="Mes Paris Sportifs">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="bet in bets" type="item-text-wrap" href="#/tab/bets/{{bet.id}}">
-        <img ng-src="{{bet.face}}">
-        <h2>{{bet.name}}</h2>
-        <p>{{bet.lastText}}</p>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" 
+                ng-repeat="bet in bets" 
+                type="item-text-wrap" 
+                href="#/tab/bets/{{bet.id}}">
+        <h4>{{bet.competition}} {{bet.domicile}} {{bet.score}} {{bet.visiteur}}</h4>
         <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+        <ion-option-button class="button-assertive" ng-click="remove(bet)">
           Delete
         </ion-option-button>
       </ion-item>
